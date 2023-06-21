@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/firstFragment"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvName"
+        android:padding="@dimen/margin"
+        android:layout_marginVertical="@dimen/margin"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:hint="@string/etName"
+        android:textColorHint="@color/black"
+        android:padding="@dimen/margin"
+        android:layout_marginVertical="@dimen/margin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:inputType="text"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvCite"
+        android:textSize="20sp"
+        android:padding="@dimen/margin"
+        android:layout_marginVertical="@dimen/margin"
+        android:textColor="@color/black"
+        android:id="@+id/tvCity"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCity"
+        android:hint="@string/etCity"
+        android:padding="@dimen/margin"
+        android:layout_marginVertical="@dimen/margin"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin"
+        android:layout_marginVertical="@dimen/margin"
+        android:id="@+id/btnNext"
+        android:text="@string/btnNext"
+        android:textColor="@color/white"  />
+
+
+</LinearLayout>

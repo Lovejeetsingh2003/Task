@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvName">Enter Your Name</string>
+    <string name="etName">Text Here</string>
+    <string name="tvCite">Enter Your City Name</string>
+    <string name="etCity">Text Here</string>
+    <string name="btnNext">Next Page</string>
+    <string name="btnBack">Back</string>
+</resources>
