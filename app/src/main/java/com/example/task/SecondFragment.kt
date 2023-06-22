@@ -23,13 +23,16 @@ class SecondFragment : Fragment() {
     private var param2: String? = null
     lateinit var binding : FragmentSecondBinding
     lateinit var mainActivity: MainActivity
-
+    var name1 = ""
+    var city1 = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mainActivity = activity as MainActivity
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+            name1  = it.getString("name").toString()
+            city1  = it.getString("city").toString()
         }
     }
 
@@ -39,6 +42,8 @@ class SecondFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentSecondBinding.inflate(layoutInflater)
+        binding.tvName2.text = name1
+        binding.tvCity2.text = city1
         return binding.root
     }
 

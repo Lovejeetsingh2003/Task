@@ -46,7 +46,12 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnNext.setOnClickListener {
-               mainActivity.navController.navigate(R.id.secondFragment)
+            val name = Bundle()
+
+
+            name.putString("name",binding.etName.text.toString())
+            name.putString("city",binding.etCity.text.toString())
+               mainActivity.navController.navigate(R.id.secondFragment,name)
         }
     }
     companion object {
