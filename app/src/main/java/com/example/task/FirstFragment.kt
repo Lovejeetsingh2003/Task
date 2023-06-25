@@ -51,7 +51,7 @@ class FirstFragment : Fragment() {
 
             name.putString("name",binding.etName.text.toString())
             name.putString("city",binding.etCity.text.toString())
-               mainActivity.navController.navigate(R.id.secondFragment,name)
+               mainActivity.navController.navigate(R.id.action_firstFragment2_to_secondFragment,name)
         }
     }
     companion object {
